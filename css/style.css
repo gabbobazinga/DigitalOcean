@@ -5,14 +5,164 @@
   height: 100px;
 }
 
-/* header */
-.bg-hero {
-  background-color: lightpink;
+/* GLOBAL */
+* {
+  font-size: 16px;
+  font-family: Sailec-Regular,"system-ui",-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,"sans-serif";
 }
 
+.p_rel {
+  position: relative;
+}
+
+.centering_item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v_align {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  font-family: 'Sailec-Bold','system-ui','-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Helvetica Neue','Helvetica','Arial','sans-serif';
+}
+
+/* header */
+.nav_bar [class *= "col-"]{
+  height: 8rem;
+  line-height: 8rem;;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.nav_bar ul li {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #33466D;
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.nav_bar ul li i{
+  font-size: 2rem;
+}
+
+.nav_bar ul:last-child li:last-child button{
+  border: 1px solid #2F85FF;
+  color: #2F85FF;
+  font-weight: bold;
+}
+
+.nav_bar > div:first-child img {
+  width: 70%;
+}
+
+.nav_bar > div:first-child {
+  text-align: left;
+}
+
+.bg-hero {
+  background-image: url('https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-hero > div [class *= "col-"] {
+  height: 50rem;
+}
+
+.bg-hero > div:first-child h1 {
+  font-weight: 600;
+  text-shadow: 1px;
+  font-size: 7rem;
+  letter-spacing: -1px;
+  color: white;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.bg-hero .container .row > div:first-child p {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #BBCDFF;
+  text-shadow: 3px 3px 10px #024EFF;
+}
+
+.login_card {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.login_card h2 {
+  font-weight: 600;
+}
+
+.login_card h2:nth-of-type(2) {
+  color: #006AFF;
+}
+
+.login_card .form_input {
+  width: 95%;
+  margin: auto;
+}
+
+.login_card .form_input button,
+.login_card .form_input input {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.login_card .form_input button[type="button"] {
+  background-color: #579AFF;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.login_card .form_input button:last-of-type {
+  background-color: white;
+  color: #858585;
+  font-size: 1.6rem;
+  font-weight: bold;
+  box-shadow: 2px 0 2px lightgray;
+  margin-bottom: 2rem;
+}
+
+.login_card .form_input button:last-of-type img {
+  width: 2rem;
+  position: relative;
+  right: 30%;
+}
+
+.login_card .form_input p,
+.login_card .form_input a {
+  margin-bottom: 3rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 /* logos */
 #logos {
-  background-color: red;
+  background-color: #F3F5F9;
+}
+
+#logos .logo_img {
+  width: calc(90% / 6);
+  display: inline-block;
+}
+
+#logos .logo_img img {
+  width: 100%;
+  text-align: center;
 }
 
 /* deploy */
