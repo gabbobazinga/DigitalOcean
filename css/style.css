@@ -1,0 +1,47 @@
+/* DEBUG */
+
+.debug [class *= "col-"] {
+  border: 1px solid black;
+  height: 100px;
+}
+
+/* header */
+.bg-hero {
+  background-color: lightpink;
+}
+
+/* logos */
+#logos {
+  background-color: red;
+}
+
+/* deploy */
+#deploy {
+  background-color: green;
+}
+
+/* build */
+#build {
+  background-color: yellow;
+}
+
+/* features */
+#features {
+  background-color: purple;
+}
+
+/* service */
+#service {
+  background-color: orange;
+}
+
+/* development */
+#development {
+  background-color: blue;
+}
+
+/* started */
+#started {
+  background-color: gray;
+}
+/* footer */
