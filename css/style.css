@@ -251,10 +251,13 @@ h1 {
   padding-left: 1rem;
 }
 
-#deploy .item_top .item_deploy:first-child,
-#deploy .item_bottom .item_deploy:first-child {
+#deploy .item_deploy {
+  padding: 2rem 0;
+}
+
+#deploy .item_top > div:first-child .item_deploy,
+#deploy .item_bottom > div:first-child .item_deploy {
   margin-left: 30%;
-  margin-bottom: 5rem;
 }
 
 #deploy .row .item_deploy h4 {
