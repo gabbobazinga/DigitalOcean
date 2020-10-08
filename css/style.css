@@ -2,7 +2,7 @@
 
 .debug [class *= "col-"] {
   border: 1px solid black;
-  height: 100px;
+  height: 20rem;
 }
 
 /* GLOBAL */
@@ -103,11 +103,12 @@ h1 {
 }
 
 .login_card h2 {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .login_card h2:nth-of-type(2) {
   color: #006AFF;
+  margin-top: 1rem;
 }
 
 .login_card .form_input {
@@ -120,6 +121,19 @@ h1 {
   display: block;
   width: 100%;
   margin-top: 1rem;
+}
+
+.login_card .form_input input[type="email"],
+.login_card .form_input input[type="password"] {
+  font-size: 1.8rem;
+  height: 4.5rem;
+  box-shadow: none;
+  border: 1px solid #EEEEEE;
+}
+
+.login_card .form_input input::placeholder {
+  color: #757575;
+  font-weight: 600;
 }
 
 .login_card .form_input button[type="button"] {
@@ -150,24 +164,90 @@ h1 {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
 /* logos */
 #logos {
   background-color: #F3F5F9;
 }
 
+#logos .row:first-child {
+  margin-top: 5rem;
+}
+
+#logos .row:first-child p {
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #6F7B97;
+}
+
+#logos .row > div:first-of-type {
+  text-align: center;
+}
+
+#logos .row > div:nth-of-type(2) {
+  text-align: center;
+  line-height: 10rem;
+}
+
 #logos .logo_img {
   width: calc(90% / 6);
   display: inline-block;
+  vertical-align: middle;
+  margin-left: calc(10% / 7);
+}
+
+#logos .row .logo_img:first-child {
+  margin-left: 0;
 }
 
 #logos .logo_img img {
   width: 100%;
-  text-align: center;
+}
+
+#logos .row:last-child {
+  margin-bottom: 5rem;
+}
+
+#logos .row:last-child a {
+  font-size: 1.8rem;
+  color: #006AFF;
+  font-weight: 600;
 }
 
 /* deploy */
 #deploy {
-  background-color: green;
+  background-color: white;
+}
+
+#deploy .row:first-child > div:first-of-type {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#deploy .row:first-child > div:first-of-type h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+#deploy .row:first-child > div:first-of-type p {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #5C6A88;
+}
+
+#deploy .row:nth-child(2) > div:first-of-type ul {
+  list-style: none;
+}
+
+#deploy .row:nth-child(2) > div:first-of-type ul li {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #75809A;
+  border-left: 3px solid #CCCCCC;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 
 /* build */
