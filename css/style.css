@@ -220,18 +220,18 @@ h1 {
   background-color: white;
 }
 
-#deploy .row:first-child > div:first-of-type {
+#deploy .container > .row:first-child > div:first-of-type {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
-#deploy .row:first-child > div:first-of-type h2 {
+#deploy .container > .row:first-child > div:first-of-type h2 {
   font-size: 4rem;
   font-weight: bold;
 }
 
-#deploy .row:first-child > div:first-of-type p {
+#deploy .container > .row:first-child > div:first-of-type p {
   font-size: 2.2rem;
   font-weight: 600;
   color: #5C6A88;
@@ -239,6 +239,7 @@ h1 {
 
 #deploy .row:nth-child(2) > div:first-of-type ul {
   list-style: none;
+  margin-left: 30%;
 }
 
 #deploy .row:nth-child(2) > div:first-of-type ul li {
@@ -248,6 +249,23 @@ h1 {
   border-left: 3px solid #CCCCCC;
   padding-bottom: 2rem;
   padding-left: 1rem;
+}
+
+#deploy .item_top .item_deploy:first-child,
+#deploy .item_bottom .item_deploy:first-child {
+  margin-left: 30%;
+  margin-bottom: 5rem;
+}
+
+#deploy .row .item_deploy h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#deploy .row .item_deploy p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #75809A;
 }
 
 /* build */
